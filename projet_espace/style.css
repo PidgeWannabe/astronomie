@@ -1,0 +1,251 @@
+@font-face {
+    font-family:'Day Roman';
+    src: url('Day Roman.eot');
+	src: url('Day Roman.eot?#iefix') format('embedded-opentype'),
+		url('Day Roman.woff2') format('woff2'),
+		url('Day Roman.woff') format('woff'),
+		url('Day Roman.svg#Day Roman') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+@font-face {
+    font-family: 'Ballpark';
+    src: url('BallparkWeiner.eot');
+    src: url('BallparkWeiner.eot?#iefix') format('embedded-opentype'),
+        url('BallparkWeiner.woff2') format('woff2'),
+        url('BallparkWeiner.woff') format('woff'),
+        url('BallparkWeiner.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #1B3038;
+    background-color: #d16f4b;
+}
+
+#bloc_page{
+    width: 70%;
+    margin: auto;
+}
+
+section h2, footer h2, nav li{
+    font-family: 'Day Roman';
+}
+
+#header_principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px #4BD16F solid;
+}
+
+.navbar{
+    display: flex;
+    align-items: flex-end;
+}
+
+.navbar ul{
+    font-size: 1.2em;
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar ul li{
+    margin: 0 0 0 10px 
+}
+
+.navbar ul a{
+    color: #1B3038;
+    text-decoration: none;    
+}
+
+.navbar ul a:hover{
+    text-decoration: underline; 
+    color: #4BD16F;   
+}
+
+#banniere{
+    margin: 19.2px 0;
+    background-image: url('contenu/banniere.jpg');
+    height: 250px;
+    border-radius: 10px;
+}
+
+#banniereContent {
+    position: relative;
+    top: 80%;
+    display: flex; 
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0 1em;
+    border-radius: 10px;
+}
+
+#banniere p {
+    color: #dff7e6;
+    
+}
+
+
+#banniere button{
+    vertical-align: middle;
+    text-decoration: none;
+    height: 1.6em;
+    text-align: center;
+    margin-top: 1em;
+    overflow: auto;
+    /* background: linear-gradient(); */
+    background: linear-gradient(#4BD16F,#23883e);
+    border: 0px;
+    border-radius: 2px;
+    color: #dff7e6;
+}
+
+#banniere button:hover{
+    cursor: pointer;
+}
+
+
+#banniere a button{
+    text-decoration: none;
+    color: #dff7e6;
+}
+
+.ico_astro{
+    vertical-align: middle;
+}
+
+.decouverte{
+    display: flex;
+    border-bottom: 2px #4BD16F solid;
+}
+
+.decouverte article{
+    margin-right: 1em;
+} 
+
+.decouverte aside{
+    
+    background-color: #4BD16F;
+    color: #dff7e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+} 
+
+
+
+.social{
+    margin-bottom: 0.83em;
+}
+
+.fleche_bulle{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+footer h2{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.tweet{
+    /* flex: 2; */
+}
+
+.mes_photos{
+    /* flex: 2; */
+}
+
+.photos{
+    display: flex;
+    
+}
+
+.mes_photos div p img{
+    border: 1px black solid;
+    margin: 2px;
+}
+
+.amis{
+    /* flex: 3; */
+}
+
+.amis div{
+    display: flex;
+}
+
+.amis div ul{
+    list-style-image: url('contenu/ico_liensexterne.png');
+    padding-left: 0;
+}
+
+.amis div ul:nth-child(2){
+    margin-left: 45px;
+}
+
+@media all and (max-width: 1024px){
+
+    #bloc_page{
+        width: auto;
+    }
+
+    #header_principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px #4BD16F solid;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        padding-left:0;
+        font-size: 1.3em;
+    }
+    
+    #banniere{
+        display: none;
+    }
+
+    .decouverte{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px #4BD16F solid;
+    }
+
+    .fleche_bulle{
+        display: none;
+    }
+
+    .decouverte aside{
+        display: block;
+        text-align: left;
+        padding: 1em;
+    } 
+
+    .social{
+        text-align: center;
+    }
+
+    #profil img{
+        float: right;
+        width: 110px;
+        vertical-align: middle;
+    }
+
+}
